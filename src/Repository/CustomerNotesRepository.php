@@ -4,6 +4,7 @@ namespace App\Repository;
 
 use App\Entity\CustomerNotes;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+use Doctrine\DBAL\Exception;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
@@ -19,32 +20,32 @@ class CustomerNotesRepository extends ServiceEntityRepository
         parent::__construct($registry, CustomerNotes::class);
     }
 
-    // /**
-    //  * @return CustomerNotes[] Returns an array of CustomerNotes objects
-    //  */
-    /*
-    public function findByExampleField($value)
+    /**
+     * Fetches the specific customer's note or returns null if connection to the database fails
+     * @param int $id       - id of the specific customer
+     * @return array|null
+     */
+    public function fetchCustomerNotes(int $id)
     {
-        return $this->createQueryBuilder('c')
-            ->andWhere('c.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('c.id', 'ASC')
-            ->setMaxResults(10)
-            ->getQuery()
-            ->getResult()
-        ;
-    }
-    */
+        $connection = $this->getEntityManager()->getConnection();
 
-    /*
-    public function findOneBySomeField($value): ?CustomerNotes
-    {
-        return $this->createQueryBuilder('c')
-            ->andWhere('c.exampleField = :val')
-            ->setParameter('val', $value)
-            ->getQuery()
-            ->getOneOrNullResult()
-        ;
+        try {
+            $stmt = $connection->prepare("
+                SELECT notes 
+                FROM customer_notes
+                WHERE customer_list_id = :id
+            ");
+
+            $stmt->execute(['id' => $id]);
+
+            $results = $stmt->fetchAllAssociative();
+
+        } catch (Exception $e) {
+            echo 'Exception caught '. $e;
+        } catch (\Doctrine\DBAL\Driver\Exception $e) {
+            echo 'Exception caught '. $e;
+        }
+
+        return $results ?? null;
     }
-    */
 }

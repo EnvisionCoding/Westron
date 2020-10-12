@@ -4,7 +4,9 @@ namespace App\Repository;
 
 use App\Entity\CustomerList;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+use Doctrine\DBAL\Exception;
 use Doctrine\Persistence\ManagerRegistry;
+use Symfony\Component\ErrorHandler\Debug;
 
 /**
  * @method CustomerList|null find($id, $lockMode = null, $lockVersion = null)
@@ -19,32 +21,30 @@ class CustomerListRepository extends ServiceEntityRepository
         parent::__construct($registry, CustomerList::class);
     }
 
-    // /**
-    //  * @return CustomerList[] Returns an array of CustomerList objects
-    //  */
-    /*
-    public function findByExampleField($value)
+    /**
+     * Fetches all customers or returns null if connection to database fails
+     * @return array|null
+     */
+    public function fetchAllCustomers()
     {
-        return $this->createQueryBuilder('c')
-            ->andWhere('c.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('c.id', 'ASC')
-            ->setMaxResults(10)
-            ->getQuery()
-            ->getResult()
-        ;
-    }
-    */
+        $connection = $this->getEntityManager()->getConnection();
 
-    /*
-    public function findOneBySomeField($value): ?CustomerList
-    {
-        return $this->createQueryBuilder('c')
-            ->andWhere('c.exampleField = :val')
-            ->setParameter('val', $value)
-            ->getQuery()
-            ->getOneOrNullResult()
-        ;
+        try {
+            $stmt = $connection->prepare("
+                SELECT * 
+                FROM customer_list
+            ");
+
+            $stmt->execute();
+
+            $results = $stmt->fetchAllAssociative();
+
+        } catch (Exception $e) {
+            echo 'Exception caught '. $e;
+        } catch (\Doctrine\DBAL\Driver\Exception $e) {
+            echo 'Exception caught '. $e;
+        }
+
+        return $results ?? null;
     }
-    */
 }
