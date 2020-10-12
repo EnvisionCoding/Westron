@@ -11,12 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="798790bb-3437-4e19-b882-9a81054369a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/ApiController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/LandingController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/pages/landing.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/CustomerListRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/CustomerListRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/CustomerNotesRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/CustomerNotesRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/landing.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/landing.html.twig" afterDir="false" />
     </list>
     <list id="b581a5eb-8cb8-4fd0-a648-d110450718e1" name="Ignore" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
@@ -56,7 +51,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602454829810</updated>
       <workItem from="1602454830859" duration="578000" />
-      <workItem from="1602504958998" duration="17392000" />
+      <workItem from="1602504958998" duration="17708000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1602505633386</created>
@@ -79,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602512668522</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add searchable table view">
+      <created>1602526943738</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602526943738</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,7 +102,8 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Add doctrine ORM" />
     <MESSAGE value="Set up database and tables" />
-    <option name="LAST_COMMIT_MESSAGE" value="Set up database and tables" />
+    <MESSAGE value="Add searchable table view" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add searchable table view" />
   </component>
   <component name="WindowStateProjectService">
     <state x="335" y="380" key="#SQL_Dialects" timestamp="1602515014507">
@@ -139,10 +142,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="789" y="408" key="VCS.EditChangelistDialog/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1602506441263" />
-    <state x="551" y="272" key="Vcs.Push.Dialog.v2" timestamp="1602505640762">
+    <state x="551" y="272" key="Vcs.Push.Dialog.v2" timestamp="1602526947102">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="551" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1602505640762" />
+    <state x="551" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1602526947102" />
     <state x="858" y="416" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1602511377936">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

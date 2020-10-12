@@ -11,17 +11,21 @@
 {% block body %}
     <div class="container">
         <div class="row">
+
+{#            Created a table using 'bootstrap-table' with built in search/filter and sorting features #}
             <table
                     id="table"
                     data-toggle="table"
                     data-sortable="true"
             >
+
+{#                thead with help of 'bootstrap-table' controlls data fields for each column of the table#}
                 <thead>
                     <tr>
-                        <th data-field="id" data-sorable="true">ID</th>
-                        <th data-field="first_name" data-sorable="true">First Name</th>
-                        <th data-field="last_name" data-sorable="true">Last Name</th>
-                        <th data-field="notes" data-sorable="false">Notes</th>
+                        <th data-field="id" data-sortable="true">ID</th>
+                        <th data-field="first_name"data-sortable="true">First Name</th>
+                        <th data-field="last_name" data-sortable="true">Last Name</th>
+                        <th data-field="notes" data-sortable="true">Notes</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -66,7 +70,6 @@
             }
             ],
             search: true,
-            sortable: true,
             url: '/api/customers',
 
         })
