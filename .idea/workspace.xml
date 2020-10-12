@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="798790bb-3437-4e19-b882-9a81054369a7" name="Default Changelist" comment="" />
+    <list default="true" id="798790bb-3437-4e19-b882-9a81054369a7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/3a42ab85-099d-44f9-8285-03846d2cf03e.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,14 +24,22 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ikc3LGvslbluDecsYmRYnJlEUU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -29,17 +51,56 @@
       <option name="presentableId" value="Default" />
       <updated>1602454829810</updated>
       <workItem from="1602454830859" duration="578000" />
-      <workItem from="1602504958998" duration="381000" />
+      <workItem from="1602504958998" duration="1187000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1602505633386</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602505633386</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="551" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602505712994">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="551" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1602505712994" />
+    <state x="739" y="280" key="FileChooserDialogImpl" timestamp="1602505476244">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="739" y="280" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1602505476244" />
     <state x="460" y="184" key="SettingsEditor" timestamp="1602454840721">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="460" y="184" key="SettingsEditor/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1602454840721" />
+    <state x="551" y="272" key="Vcs.Push.Dialog.v2" timestamp="1602505640762">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="551" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1602505640762" />
+    <state x="760" y="445" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1602505588995">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="760" y="445" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1602505588995" />
   </component>
 </project>
