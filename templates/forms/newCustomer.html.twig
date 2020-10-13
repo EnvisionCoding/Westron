@@ -1,0 +1,50 @@
+{#{{ form(listForm) }}#}
+
+{#{{ form_widget(listForm.first_name) }}#}
+
+        {% block stylesheets %}
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        {% endblock %}
+
+{% block body %}
+    <div class="container">
+
+        <div class="form-row">
+            <div class="col">
+                {{ form_row(listForm.first_name, {
+                    "label": "First Name",
+                    "required": true,
+                    "attr": {
+                        "placeholder": "Enter First Name"
+                    }
+                }) }}
+            </div>
+
+            <div class="col">
+                {{ form_row(listForm.last_name, {
+                    "label": "Last Name",
+                    "required": true,
+                    "attr": {
+                        "placeholder": "Enter Last Name"
+                    }
+                }) }}
+            </div>
+        </div>
+
+        {{ form_row(listForm.notes, {
+            "label": "Notes",
+            "required": true,
+            "attr": {
+                "placeholder": "Enter Customer Notes"
+            }
+        }) }}
+
+        {{ form_row(listForm.save, {
+            "label": "Create Customer",
+        }) }}
+
+
+    </div>
+{% endblock %}
+
+

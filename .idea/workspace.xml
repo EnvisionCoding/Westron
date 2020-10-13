@@ -11,8 +11,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="798790bb-3437-4e19-b882-9a81054369a7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Controller/CustomerController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/Type/CustomerType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/forms/newCustomer.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/CustomerList.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/CustomerList.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/CustomerNotes.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/CustomerNotes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/CustomerListRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/CustomerListRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/pages/landing.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/landing.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
+    <list id="df36f29b-94c7-4b30-a878-a6ca62859965" name="Add feature buttons to table view" comment="" />
     <list id="b581a5eb-8cb8-4fd0-a648-d110450718e1" name="Ignore" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
     </list>
@@ -46,12 +59,13 @@
     <task active="true" id="Default" summary="Default task">
       <changelist id="798790bb-3437-4e19-b882-9a81054369a7" name="Default Changelist" comment="" />
       <changelist id="b581a5eb-8cb8-4fd0-a648-d110450718e1" name="Ignore" comment="" />
+      <changelist id="df36f29b-94c7-4b30-a878-a6ca62859965" name="Add feature buttons to table view" comment="" />
       <created>1602454829810</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602454829810</updated>
       <workItem from="1602454830859" duration="578000" />
-      <workItem from="1602504958998" duration="17708000" />
+      <workItem from="1602504958998" duration="28274000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1602505633386</created>
@@ -81,7 +95,21 @@
       <option name="project" value="LOCAL" />
       <updated>1602526943738</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add api controller to populate customer tables">
+      <created>1602527310814</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1602527310814</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add sorting feature to table view">
+      <created>1602527341688</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1602527341688</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,7 +131,9 @@
     <MESSAGE value="Add doctrine ORM" />
     <MESSAGE value="Set up database and tables" />
     <MESSAGE value="Add searchable table view" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add searchable table view" />
+    <MESSAGE value="Add api controller to populate customer tables" />
+    <MESSAGE value="Add sorting feature to table view" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add sorting feature to table view" />
   </component>
   <component name="WindowStateProjectService">
     <state x="335" y="380" key="#SQL_Dialects" timestamp="1602515014507">
@@ -118,10 +148,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="689" y="294" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1602521289264" />
-    <state x="92" y="92" width="1736" height="896" key="DiffContextDialog" timestamp="1602512669595">
+    <state x="92" y="92" width="1736" height="896" key="DiffContextDialog" timestamp="1602531969499">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="92" y="92" width="1736" height="896" key="DiffContextDialog/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1602512669595" />
+    <state x="92" y="92" width="1736" height="896" key="DiffContextDialog/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1602531969499" />
     <state x="739" y="280" key="FileChooserDialogImpl" timestamp="1602505476244">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -130,22 +160,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="209" height="463" key="HiddenNamespacesPopup/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1602512048224" />
-    <state x="750" y="262" key="NewPhpClassDialog" timestamp="1602521267947">
+    <state x="750" y="262" key="NewPhpClassDialog" timestamp="1602530108995">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="750" y="262" key="NewPhpClassDialog/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1602521267947" />
+    <state x="750" y="262" key="NewPhpClassDialog/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1602530108995" />
     <state x="460" y="184" key="SettingsEditor" timestamp="1602454840721">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="460" y="184" key="SettingsEditor/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1602454840721" />
-    <state x="789" y="408" key="VCS.EditChangelistDialog" timestamp="1602506441263">
+    <state x="789" y="408" key="VCS.EditChangelistDialog" timestamp="1602531793259">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="789" y="408" key="VCS.EditChangelistDialog/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1602506441263" />
-    <state x="551" y="272" key="Vcs.Push.Dialog.v2" timestamp="1602526947102">
+    <state x="789" y="408" key="VCS.EditChangelistDialog/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1602531793259" />
+    <state x="551" y="272" key="Vcs.Push.Dialog.v2" timestamp="1602527347793">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="551" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1602526947102" />
+    <state x="551" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1602527347793" />
     <state x="858" y="416" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1602511377936">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -158,13 +188,21 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="802" y="242" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1602514632450" />
+    <state x="92" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1602528465205">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="92" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1602528465205" />
     <state x="760" y="445" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1602505588995">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="760" y="445" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1602505588995" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1602526325151">
+    <state x="676" y="310" key="refactoring.ChangeSignatureDialog" timestamp="1602530822572">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1602526325151" />
+    <state x="676" y="310" key="refactoring.ChangeSignatureDialog/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1602530822572" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1602532504275">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/1920.0.1600.900@0.0.1920.1080" timestamp="1602532504275" />
   </component>
 </project>

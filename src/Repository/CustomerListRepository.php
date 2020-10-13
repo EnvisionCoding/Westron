@@ -47,4 +47,29 @@ class CustomerListRepository extends ServiceEntityRepository
 
         return $results ?? null;
     }
+
+    public function fetchCurrentIndex()
+    {
+        $connection = $this->getEntityManager()->getConnection();
+
+        try {
+            $stmt = $connection->prepare("
+                SELECT * 
+                FROM customer_list
+                ORDER BY id DESC 
+                LIMIT 1
+            ");
+
+            $stmt->execute();
+
+            $results = $stmt->fetchOne();
+
+        } catch (Exception $e) {
+            echo 'Exception caught '. $e;
+        } catch (\Doctrine\DBAL\Driver\Exception $e) {
+            echo 'Exception caught '. $e;
+        }
+
+        return $results ?? null;
+    }
 }

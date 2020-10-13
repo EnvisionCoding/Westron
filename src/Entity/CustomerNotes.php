@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use App\Repository\CustomerNotesRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass=CustomerNotesRepository::class)
@@ -19,6 +20,7 @@ class CustomerNotes
 
     /**
      * @ORM\Column(type="integer")
+     * @Assert\NotBlank()\NotBlank()
      */
     private $customerListId;
 
